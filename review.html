@@ -30,58 +30,124 @@
   }
 </style>
 
+<!DOCTYPE html>
+<html>
+<title>Contacts</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif
+  }
+
+  .w3-row-padding img {
+    margin-bottom: 12px
+  }
+
+  .bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('images/becks.JPG');
+    min-height: 100%;
+  }
+</style>
+
 <body class="w3-black">
 
   <!-- Page Content -->
-  <div class="w3-main w3-padding-large" style="margin-left:40%">
+  <div class="w3-main w3-padding-large">
 
     <!-- Header -->
-    <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+    <header class="w3-container w3-left id=" home">
       <h1 class="w3-jumbo"><b>Rebecca Tara Cameron</b></h1>
       <p>Agile Facilitator | Legal Advisor.</p>
     </header>
 
     <!-- Testimonials -->
-    <h3 class="w3-padding-24">Reviews </h3>
-    <img src="images/ci.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-text-grey w3-margin-right">Chandler Bing.</span> Web Designer.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>
+    <div class="w3-row">
+      <div class="w3-col s6 w3-center">
 
-    <img src="images/di.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-text-grey w3-margin-right">Chris Fox.</span> Web Developer.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>
+        <h3 class="w3-padding-32">REVIEWS</h3>
+        <img src="images/ci.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-text-grey w3-margin-right">Chandler Bing.</span> Web Designer.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>
 
-    <img src="images/la.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-text-grey w3-margin-right">Jenifer Flex.</span> CEO at X Company.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>
+        <img src="images/di.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-text-grey w3-margin-right">Chris Fox.</span> Web Developer.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>
 
-
+        <img src="images/la.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+        <p><span class="w3-large w3-text-grey w3-margin-right">Jenifer Flex.</span> CEO at X Company.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><br>
+      </div>
+    </div>
   </div>
 
-  <!-- End About Section -->
+
+  <!-- Automatic Slideshow Images -->
+  <div class="w3-col s6 w3-dark">
+    <div class="mySlides w3-display-container w3-display-right">
+      <img src="images/la.jpg" style="width:70%">
+    </div>
+    <div class="mySlides w3-display-container w3-display-right">
+      <img src="images/ci.jpg" style="width:70%">
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-display-right">
+    <img src="images/kk.jpg" style="width:70%">
+  </div>
   </div>
 
 
-  <iframe src="https://giphy.com/embed/aMzFQ7nULrguA" width="200" height="100" frameBorder="0" class="giphy-embed"
-    allowFullScreen></iframe>
-  <p><a href="https://giphy.com/gifs/popkey-feedback-client-aMzFQ7nULrguA" style="color:gray">&#128525</a></p>
+  <iframe src="https://giphy.com/embed/aMzFQ7nULrguA" width="200" height="150" frameBorder="0" class="giphy-embed"
+    allowFullScreen>
+  </iframe>
+  <p><a href="https://giphy.com/gifs/popkey-feedback-client-aMzFQ7nULrguA" style="color:grey">.</a>
+  </p>
 
   <!-- Footer -->
-  <footer class="w3-container w3-padding-28 w3-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
+  <footer class="w3-container w3-padding-20 w3-grey w3-center w3-opacity w3-xlarge" style="margin:-24px">
     <p class="w3-medium">Let's get in touch !</p>
-
     <a href="https://twitter.com/BecksCameronZA"><i class="fa fa-twitter w3-xxxlarge w3-hover-opacity"></i></a>
     <a href="https://www.linkedin.com/in/rebecca-tara-cameron-b7278114b/"><i
         class="fa fa-linkedin w3-xxxlarge w3-hover-opacity"></i></a>
     <h6> Copywrite &#9400; 2020 Rebecca Tara Cameron.</h6>
     <p class="w3-medium">Designed by <a href="http://mr-zack.com/" target="_blank" class="w3-hover-text-green">Mr
         Zack</a></p>
-    <!-- End footer -->
   </footer>
 
+  <!-- End footer -->
+
   <!-- END PAGE CONTENT -->
-  </div>
-  </footer>
+  <script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1
+      }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 1000);
+    }
+  </script>
 </body>
 
 </html>
