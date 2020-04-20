@@ -73,25 +73,6 @@
       <p>Agile Facilitator | Legal Advisor.</p>
     </header>
 
-    <!-- Automatic Slideshow Images -->
-    <div class="w3-col s6 w3-dark">
-      <div class="mySlides w3-display-container w3-margin-left w3-display-top">
-        <img src="images/dev.jpg" style="width:35%; height:150px;">
-      </div>
-      <div class="mySlides w3-display-container w3-display-top">
-        <img src="images/afro.jpg" style="width:35%; height:150px;">
-      </div>
-      <div class="mySlides w3-display-container w3-display-top">
-        <img src="images/cowa.jpg" style="width:35%; height:150px;">
-      </div>
-
-      <div class="mySlides w3-display-container w3-display-top">
-        <img src="images/predi.jpg" style="width:35%; height:150px;">
-      </div>
-      <div class="mySlides w3-display-container w3-display-top">
-        <img src="images/kk.jpg" style="width:35%; height:150px;">
-      </div>
-    </div>
 
     <!-- Testimonials -->
     <div class="w3-row">
@@ -176,26 +157,6 @@
 
   <!-- End footer -->
 
-  <!-- END PAGE CONTENT -->
-  <script>
-    // Automatic Slideshow - change image every 4 seconds
-    var myIndex = 0;
-    carousel();
-
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      myIndex++;
-      if (myIndex > x.length) {
-        myIndex = 1
-      }
-      x[myIndex - 1].style.display = "block";
-      setTimeout(carousel, 1000);
-    }
-  </script>
 </body>
 
 </html>
