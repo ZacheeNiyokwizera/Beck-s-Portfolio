@@ -1,0 +1,55 @@
+# application: techno-group-angular
+# version: 1
+service: default
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+  secure: always
+
+- url: /images
+  static_dir: images
+  expiration: 365d
+  secure: always
+
+- url: /index\.html
+  static_files: index.html
+  upload: index.html
+  secure: always
+
+- url: /style\.css
+  static_files: style.css
+  upload: style.css
+  secure: always
+
+- url: /contacts\.html
+  static_files: contacts.html
+  upload: contacts.html
+  secure: always
+
+- url: /retro\.html
+  static_files: retro.html
+  upload: retro.html
+  secure: always
+
+- url: /review\.html
+  static_files: review.html
+  upload: review.html
+  secure: always
+
+- url: /
+  static_files: index.html
+  upload: index.html
+  secure: always
+
+# https://cloud.google.com/appengine/docs/python/config/appref#skip_files
+skip_files:
+- ^(.*/)?#.*#$
+- ^(.*/)?.*~$
+- ^(.*/)?.*\.py[co]$
+- ^(.*/)?.*/RCS/.*$
+- ^(.*/)?\..*$
